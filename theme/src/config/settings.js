@@ -1,8 +1,8 @@
 export default {
-	title: `Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`,
-	description: `A simple, clean, and modern theme for a startup or businesses' marketing website.`,
-	url: `https://odyssey-theme.littlesticks.dev`, // No trailing slash!
-	name: `Odyssey`, // The short name of the business or brand name. Used for things like the copyright in the footer.
-  enableThemeSwitcher: true,
+	title: `Anirban.io | A Personal Website for All to know about Me.`,
+	description: `A simple, clean, and modern page for All known and unknown to share about me.`,
+	url: `https://anirban-1009.github.io`, // No trailing slash!
+	name: `MySite`, // The short name of the business or brand name. Used for things like the copyright in the footer.
+  enableThemeSwitcher: false,
   showLittleSticksPlug: true, // Disable this if you want to remove the Little Sticks plug from the footer. (╯°□°)╯︵ ┻━┻
 };

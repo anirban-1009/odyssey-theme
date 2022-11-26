@@ -1,80 +1,49 @@
 export const footerSocials = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
-  },
-]
-
-export const footerLists = [
 	{
-		title: 'Landing Pages',
-		items: [
-			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
-			},
-			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
-		],
+	  name: 'Twitter',
+	  url: 'https://twitter.com/anirban9293',
+	  icon: "mdi:twitter",
 	},
 	{
-		title: 'Company',
-		items: [
-			{
-				title: 'About',
-				slug: '/company/about',
-			},
-			{
-				title: 'Blog',
-				slug: '/blog',
-			},
-			{
-				title: 'Contact',
-				slug: '/company/contact',
-			},
-		],
+	  name: 'Linkedin',
+	  url: 'https://www.linkedin.com/in/anirban-sikdar-1a11161b9/',
+	  icon: "mdi:linkedin",
 	},
 	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
-		],
+	  name: 'Github',
+	  url: 'https://github.com/anirban-1009',
+	  icon: "mdi:github",
 	},
-];
+	{
+	  name: 'Discord',
+	  url: 'https://discordapp.com/users/732131254299787294',
+	  icon: "ic:baseline-discord",
+	},
+	{
+	name: 'Email',
+	url: 'mailto:anirban-1009@riseup.net',
+	icon: "ic:email",
+	},
+  ]
+  
+  export const footerLists = [
+	  {
+		  title: 'The Stuff',
+		  items: [
+			  {
+				  title: 'About',
+				  slug: '/pages/about',
+			  },
+			  {
+				  title: 'Blog',
+				  slug: '/blog',
+			  },
+			  {
+				  title: 'Contact',
+				  slug: '/pages/contact',
+			  },
+		  ],
+	  },
+	  
+  ];
+  
