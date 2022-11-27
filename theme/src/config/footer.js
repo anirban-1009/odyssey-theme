@@ -38,10 +38,10 @@ export const footerSocials = [
 				  title: 'Blog',
 				  slug: '/blog',
 			  },
-			  {
-				  title: 'Contact',
-				  slug: '/pages/contact',
-			  },
+			//   {
+			// 	  title: 'Contact',
+			// 	  slug: '/pages/contact',
+			//   },
 		  ],
 	  },
 	  

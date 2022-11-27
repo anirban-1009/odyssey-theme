@@ -1,0 +1,223 @@
+---
+layout: '../../../layouts/Post.astro'
+title: How to Build Hugo Site
+description: This is a sample blog post for Odyssey
+publishDate: June 09, 2022
+featuredImage: '/assets/hugo-logo-wide.svg'
+excerpt: 'This is also a sample blog post for the Odyssey Theme.'
+---
+
+## How to make a Hugo web application
+
+Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+
+So in short this site is very much created using hugo and a custom [theme]("https://github.com/adityatelange/hugo-PaperMod/" "The theme repository on GitHub"). This site is been built on linux(Zorin OS) so the commands and steps been followed can be different for the OS changes.
+
+### Installing Hugo
+To install hugo on your machine you can use the following command
+
+`sudo snap install hugo`
+
+### Making a new site
+
+We have to locally create a new hugo application in order to develop it as per our requirements. To to initialize a new hugo application we have to enter the following command
+
+`hugo new site <Your site name> -f yml`
+
+In the above like we created a new direcotry on the path with the name of your site.
+
+This is broken down as follows:
+* `-f`: is used to represent that we are formating the existing format of config file
+* `yml`: is used to specify the config file type `yml` is preferred over `toml` because it is easy to read.
+
+Now we should enter the directory using `cd <Your site name>` command.
+
+### Extracting the Paper-Mod Theme
+
+The Theme used on this site the [Paper-Mod](https://github.com/adityatelange/hugo-PaperMod/ "the link duh") needs to be extracted into the working Project in order to use it.
+
+To acheive this we have to execute some more commands as follows
+
+*  `git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1`
+
+this will clone the theme into the `themes` folder.
+* `cd themes/PaperMod` 
+
+We will change our directory to the theme directory.
+
+* `git pull`
+
+We are now checking for and due updates of the theme if there are any updates to be made this command will pull those updates into the current working directory.
+
+### Adding New pages to our Site
+
+So that our page is now setup with custom theme and all we need to add some pages to is so that people can be able to read it. Like it is reason for which we are making a site now to create new pages with default template we need to enter the following lines of command on the terminal.
+
+`hugo new posts/my-first-post.md`
+
+You can create various pages by changing the page name all the pages of this site will be inside the `content/` directory.
+This will create a new page on the posts section in with page name as my-first-post.
+
+Since we have added pages we need to edit it right because we have used `.md` so we need to edit these markdown files which are a piece of cake to do you can see the procedure of how to edit markdown files [here✌️](https://www.w3schools.io/file/markdown-introduction/ "link for tutorial").
+
+### Setting up config File
+
+We need to also setup a `config.yml` file change the deafult look of the theme and to initialize the theme. We need to enter the root directory of the hugo application, there should be an existing config file we need to add the following contents to it.
+```
+baseURL: "https://examplesite.com/"
+title: ExampleSite
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+```
+
+
+
+### Setting up server for testing the Page
+
+So now the pages added the theme setted up we need to host the page locally so that we can see what it looks like and make some changes to it.
+
+To host a hugo page locally we need to enter:
+
+`hugo server -D`
+
+This will host the page on the local server and will show the site you need to get on it should be like 
+> http://localhost:1313/
+
+
+So now the website created and reaching all the high standards of satisfaction we should host it make it online availbe and be rich🤑 and famous😎
+
+The hosting can be done by following the steps in [this](https://gohugo.io/hosting-and-deployment/ "tutorial link dude") tutorial as per your preferences go and rock the world 🤟.
