@@ -4,9 +4,10 @@ import mdx from "@astrojs/mdx";
 import image from "@astrojs/image";
 import lit from "@astrojs/lit";
 
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://odyssey-theme.littlesticks.dev/',
+  site: 'https://anirban-1009.github.io/',
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   sitemap: true,
   // Generate sitemap (set to "false" to disable)
