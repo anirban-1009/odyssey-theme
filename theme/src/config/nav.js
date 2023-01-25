@@ -11,8 +11,4 @@ export const nav = [
 		title: 'About',
 		slug: '/about',
 	},
-	{
-	 	title: 'Link',
-	 	slug: 'https://studyglance.in/labprograms/mllabprograms.php',
-	},
 ];
