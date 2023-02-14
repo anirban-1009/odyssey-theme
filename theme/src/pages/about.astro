@@ -7,13 +7,15 @@ const seo = {
 	title: 'About | Behind the guy',
 	description: 'About Page',
 };
+
+
 ---
 
 <Layout {seo}>
 	<HeroSection>
 
     <picture slot="image-container">
-      <img
+      <img class="image-container"
         src="/assets/images/about.png"
         alt="Astro Odyssee"
         id="home-hero-image"
@@ -60,3 +62,18 @@ const seo = {
     </ul>
   </TextSection>
 </Layout>
+
+<style>
+  .image-container {
+    perspective: 1000px; /* add perspective to container for 3D effect */
+  }
+
+  img {
+    transition: transform 0.5s; /* add transition effect for smooth rolling */
+  }
+
+  img:hover {
+    transform: rotateY(180deg); /* rotate the image on the y-axis when hovering */
+  }
+
+</style>
