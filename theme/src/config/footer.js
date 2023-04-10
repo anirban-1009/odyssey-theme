@@ -15,15 +15,25 @@ export const footerSocials = [
 	  icon: "mdi:github",
 	},
 	{
+		name: 'GitLab',
+		url: 'https://gitlab.com/anirban-1009',
+		icon: "mdi:gitlab",
+	},
+	{
 	  name: 'Discord',
 	  url: 'https://discordapp.com/users/732131254299787294',
 	  icon: "ic:baseline-discord",
 	},
 	{
-	name: 'Email',
-	url: 'mailto:anirban-1009@riseup.net',
-	icon: "ic:email",
+		name: 'Email',
+		url: 'mailto:anirban-1009@riseup.net',
+		icon: "ic:email",
 	},
+	{
+		name: 'Skill boost',
+		url: "https://www.cloudskillsboost.google/public_profiles/7e10df1a-d2a5-4375-8e42-d2ddb607aa63",
+		icon: "mdi:google-cloud"
+	}
   ]
   
   export const footerLists = [
