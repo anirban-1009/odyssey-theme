@@ -6,7 +6,7 @@ export const footerSocials = [
 	},
 	{
 	  name: 'Linkedin',
-	  url: 'https://www.linkedin.com/in/anirban-sikdar-1a11161b9/',
+	  url: 'https://www.linkedin.com/in/anirban-sikdar/',
 	  icon: "mdi:linkedin",
 	},
 	{
