@@ -1,7 +1,7 @@
 export const footerSocials = [
 	{
 	  name: 'Twitter',
-	  url: 'https://twitter.com/anirban9293',
+	  url: 'https://drive.google.com/drive/folders/1RuyotkbWbg1ZFkV_RlZS_KWxwwhHdjg0?usp=sharing',
 	  icon: "mdi:twitter",
 	},
 	{
