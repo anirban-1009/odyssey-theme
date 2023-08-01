@@ -11,9 +11,10 @@ excerpt: 'This is a post on how to make static sites using hugo.'
 
 Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
 
-So in short this site is very much created using hugo and a custom [theme]("https://github.com/adityatelange/hugo-PaperMod/" "The theme repository on GitHub"). This site is been built on linux(Zorin OS) so the commands and steps been followed can be different for the OS changes.
+So in short this site is very much created using hugo and a custom [theme]("https://github.com/adityatelange/hugo-PaperMod/" 'The theme repository on GitHub'). This site is been built on linux(Zorin OS) so the commands and steps been followed can be different for the OS changes.
 
 ### Installing Hugo
+
 To install hugo on your machine you can use the following command
 
 `sudo snap install hugo`
@@ -27,25 +28,27 @@ We have to locally create a new hugo application in order to develop it as per o
 In the above like we created a new direcotry on the path with the name of your site.
 
 This is broken down as follows:
-* `-f`: is used to represent that we are formating the existing format of config file
-* `yml`: is used to specify the config file type `yml` is preferred over `toml` because it is easy to read.
+
+- `-f`: is used to represent that we are formating the existing format of config file
+- `yml`: is used to specify the config file type `yml` is preferred over `toml` because it is easy to read.
 
 Now we should enter the directory using `cd <Your site name>` command.
 
 ### Extracting the Paper-Mod Theme
 
-The Theme used on this site the [Paper-Mod](https://github.com/adityatelange/hugo-PaperMod/ "the link duh") needs to be extracted into the working Project in order to use it.
+The Theme used on this site the [Paper-Mod](https://github.com/adityatelange/hugo-PaperMod/ 'the link duh') needs to be extracted into the working Project in order to use it.
 
 To acheive this we have to execute some more commands as follows
 
-*  `git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1`
+- `git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1`
 
 this will clone the theme into the `themes` folder.
-* `cd themes/PaperMod` 
+
+- `cd themes/PaperMod`
 
 We will change our directory to the theme directory.
 
-* `git pull`
+- `git pull`
 
 We are now checking for and due updates of the theme if there are any updates to be made this command will pull those updates into the current working directory.
 
@@ -58,11 +61,12 @@ So that our page is now setup with custom theme and all we need to add some page
 You can create various pages by changing the page name all the pages of this site will be inside the `content/` directory.
 This will create a new page on the posts section in with page name as my-first-post.
 
-Since we have added pages we need to edit it right because we have used `.md` so we need to edit these markdown files which are a piece of cake to do you can see the procedure of how to edit markdown files [here✌️](https://www.w3schools.io/file/markdown-introduction/ "link for tutorial").
+Since we have added pages we need to edit it right because we have used `.md` so we need to edit these markdown files which are a piece of cake to do you can see the procedure of how to edit markdown files [here✌️](https://www.w3schools.io/file/markdown-introduction/ 'link for tutorial').
 
 ### Setting up config File
 
 We need to also setup a `config.yml` file change the deafult look of the theme and to initialize the theme. We need to enter the root directory of the hugo application, there should be an existing config file we need to add the following contents to it.
+
 ```
 baseURL: "https://examplesite.com/"
 title: ExampleSite
@@ -204,8 +208,6 @@ markup:
     # style: monokai
 ```
 
-
-
 ### Setting up server for testing the Page
 
 So now the pages added the theme setted up we need to host the page locally so that we can see what it looks like and make some changes to it.
@@ -214,10 +216,10 @@ To host a hugo page locally we need to enter:
 
 `hugo server -D`
 
-This will host the page on the local server and will show the site you need to get on it should be like 
-> http://localhost:1313/
+This will host the page on the local server and will show the site you need to get on it should be like
 
+> http://localhost:1313/
 
 So now the website created and reaching all the high standards of satisfaction we should host it make it online availbe and be rich🤑 and famous😎
 
-The hosting can be done by following the steps in [this](https://gohugo.io/hosting-and-deployment/ "tutorial link dude") tutorial as per your preferences go and rock the world 🤟.
+The hosting can be done by following the steps in [this](https://gohugo.io/hosting-and-deployment/ 'tutorial link dude') tutorial as per your preferences go and rock the world 🤟.

@@ -7,124 +7,145 @@ const seo = {
 	title: 'About | Behind the guy',
 	description: 'About Page',
 };
-
-
 ---
 
 <Layout {seo}>
 	<HeroSection>
-
-    <picture slot="image-container">
-      <img class="image-container"
-        src="/assets/images/about.png"
-        alt="Astro Odyssee"
-        id="home-hero-image"
-      />
-    </picture>
-
+		<picture slot="image-container">
+			<img
+				class="image-container"
+				src="/assets/images/about.png"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
 
 		<div slot="text-container">
 			<h1>Greating Humans!!</h1>
 			<p>
-				I am Anirban Sikdar, an undergraduate Computer Science Engineering(Artificial Intelligence & Machine Learning) Student.
-        I have a keen interest in Image Processing, Robotics, Deep Space research and Astronomy.
-        Building visualisations and interactive systems for the concepts been taught and watching them in action is the most fun part of building things. I have also gained experience in Raspberry Pi and also on various IOT platforms as Thingsboards and Adafruit IO.<br /><br />
+				I am Anirban Sikdar, an undergraduate Computer Science
+				Engineering(Artificial Intelligence & Machine Learning) Student. I have
+				a keen interest in Image Processing, Robotics, Deep Space research and
+				Astronomy. Building visualisations and interactive systems for the
+				concepts been taught and watching them in action is the most fun part of
+				building things. I have also gained experience in Raspberry Pi and also
+				on various IOT platforms as Thingsboards and Adafruit IO.<br /><br />
 
-        I have a Problem solving instinct where when i face one i don't usually tend to back-off easily 😉.
+				I have a Problem solving instinct where when i face one i don't usually
+				tend to back-off easily 😉.
 			</p>
 		</div>
-
 	</HeroSection>
-  <TextSection narrow>
-    <h3>Education</h3>
-    <ul>
-      <li>
-        <b>B.Tech in Computer Science Engineering(Artificial Intelligence and Machine Learning)</b>
-        <ul>
-          <li>Hyderabad Institute of Technology and Management</li>
-          <li>Board: JNTUH</li>
-          <li>7.0-CGPA</li>
-          <li>Year of Passing: 2024</li>
-        </ul>
-      </li>
-      <li>
-        <b>Diploma in Automation and Robotics Engineering</b>
-        <ul>
-          <li>Central Institute of Tool Design</li>
-          <li>78.37%</li>
-          <li>Year of Passing: 2021</li>
-        </ul>
-      </li>
-      <li>
-        <b>High School</b>
-        <ul>
-          <li>ICFAI Republic High School</li>
-          <li>Board: SSC</li>
-          <li>8.5-CGPA</li>
-          <li>Year of Passing: 2018</li>
-        </ul>
-      </li>
-    </ul>
+	<TextSection narrow>
+		<h3>Education</h3>
+		<ul>
+			<li>
+				<b
+					>B.Tech in Computer Science Engineering(Artificial Intelligence and
+					Machine Learning)</b
+				>
+				<ul>
+					<li>Hyderabad Institute of Technology and Management</li>
+					<li>Board: JNTUH</li>
+					<li>7.0-CGPA</li>
+					<li>Year of Passing: 2024</li>
+				</ul>
+			</li>
+			<li>
+				<b>Diploma in Automation and Robotics Engineering</b>
+				<ul>
+					<li>Central Institute of Tool Design</li>
+					<li>78.37%</li>
+					<li>Year of Passing: 2021</li>
+				</ul>
+			</li>
+			<li>
+				<b>High School</b>
+				<ul>
+					<li>ICFAI Republic High School</li>
+					<li>Board: SSC</li>
+					<li>8.5-CGPA</li>
+					<li>Year of Passing: 2018</li>
+				</ul>
+			</li>
+		</ul>
 
-    <h3>Skills</h3>
-    <ul>
-      <li>Python(Tensorflow, OpenCV, Django)</li>
-      <li>Web Programming(Next.js, React, Astro.js, jekyll)</li>
-      <li>C++/C</li>
-      <li>3D-Printing</li>
-      <li>Leadership</li>
-      <li>IoT(Rapberry Pi, Arduino)</li>
-      <li>Linux</li>
-    </ul>
-  
-    <h3>Internships</h3>
-      <ul>
-        <li><b>DigiQuanta IT Services LLP</b> (Mar 2023 - Present)</li>
-        <ul>
-          <li><u>Job Profile</u>: Developer Intern</li>
-          <li><u>Skills</u>: Arduino, Electronics, Assembly, 3D Printing</li>
-          <li><u>Role</u>: Constructing a Delta robot which will assist in sorting tomatoes according to their
-            quality. Delta robots are parallel robots that consist of three arms connected to
-            universal joints at the base. For sorting the tomatoes we used computer vision.</li><br />
-        </ul>
-        <li><b>One Gear Technology</b> (Oct 2022 - Dec 2022)</li>
-        <ul>
-          <li><u>Job Profile</u>: Developer Intern</li>
-          <li><u>Skills</u>: Django, React, DjangoRest Framework</li>
-          <li><u>Role</u>: Creating API endpoints for various functionalities of an application interface between the user and charging stations.</li><br />
-        </ul>
-        <li><b>Eunoia Innovation</b> (Jan 2022 - Jul 2022)</li>
-          <ul>
-            <li><u>Job Profile</u>: Technology Engineer</li>
-            <li><u>Skills</u>: Thingsboard, Adafruit IO, RaspberryPi</li>
-            <li><u>Role</u>: Establishing remote control over internet, in the project Auqaskimmer(Aqua Drone waste in water bodies).</li>
-          </ul>
-      </ul>
+		<h3>Skills</h3>
+		<ul>
+			<li>Python(Tensorflow, OpenCV, Django)</li>
+			<li>Web Programming(Next.js, React, Astro.js, jekyll)</li>
+			<li>C++/C</li>
+			<li>3D-Printing</li>
+			<li>Leadership</li>
+			<li>IoT(Rapberry Pi, Arduino)</li>
+			<li>Linux</li>
+		</ul>
 
-      <h3>Experience</h3>
-      <ul>
-        <li>Student Dean Doing Engineering - SSG HITAM from <b>May 2023 - present</b></li>
-        <li>Student Faculty - SSG HITAM from <b>Oct 2022 - May 2023</b></li>
-        <li>Co-ordinator at Coding Club - HITAM from <b>Nov 2022 - May 2023</b></li>
-        <li>Head of Google Technologies at Google Developers Students Club at HITAM from <b>Aug 2022 - present</b></li>
-      </ul>
+		<h3>Internships</h3>
+		<ul>
+			<li><b>DigiQuanta IT Services LLP</b> (Mar 2023 - Present)</li>
+			<ul>
+				<li><u>Job Profile</u>: Developer Intern</li>
+				<li><u>Skills</u>: Arduino, Electronics, Assembly, 3D Printing</li>
+				<li>
+					<u>Role</u>: Constructing a Delta robot which will assist in sorting
+					tomatoes according to their quality. Delta robots are parallel robots
+					that consist of three arms connected to universal joints at the base.
+					For sorting the tomatoes we used computer vision.
+				</li><br />
+			</ul>
+			<li><b>One Gear Technology</b> (Oct 2022 - Dec 2022)</li>
+			<ul>
+				<li><u>Job Profile</u>: Developer Intern</li>
+				<li><u>Skills</u>: Django, React, DjangoRest Framework</li>
+				<li>
+					<u>Role</u>: Creating API endpoints for various functionalities of an
+					application interface between the user and charging stations.
+				</li><br />
+			</ul>
+			<li><b>Eunoia Innovation</b> (Jan 2022 - Jul 2022)</li>
+			<ul>
+				<li><u>Job Profile</u>: Technology Engineer</li>
+				<li><u>Skills</u>: Thingsboard, Adafruit IO, RaspberryPi</li>
+				<li>
+					<u>Role</u>: Establishing remote control over internet, in the project
+					Auqaskimmer(Aqua Drone waste in water bodies).
+				</li>
+			</ul>
+		</ul>
 
-      <h3>Hobbies/Interests</h3>
-      <ul>
-        <li>Coding</li>
-        <li>Space Technology</li>
-        <li>Orbital Mechanics</li>
-        <li>Formula 1</li>
-      </ul>
-  </TextSection>
+		<h3>Experience</h3>
+		<ul>
+			<li>
+				Student Dean Doing Engineering - SSG HITAM from <b
+					>May 2023 - present</b>
+			</li>
+			<li>Student Faculty - SSG HITAM from <b>Oct 2022 - May 2023</b></li>
+			<li>
+				Co-ordinator at Coding Club - HITAM from <b>Nov 2022 - May 2023</b>
+			</li>
+			<li>
+				Head of Google Technologies at Google Developers Students Club at HITAM
+				from <b>Aug 2022 - present</b>
+			</li>
+		</ul>
+
+		<h3>Hobbies/Interests</h3>
+		<ul>
+			<li>Coding</li>
+			<li>Space Technology</li>
+			<li>Orbital Mechanics</li>
+			<li>Formula 1</li>
+		</ul>
+	</TextSection>
 </Layout>
 
 <style>
-  .image-container {
-    perspective: 1000px; /* add perspective to container for 3D effect */
-  }
+	.image-container {
+		perspective: 1000px; /* add perspective to container for 3D effect */
+	}
 
-  img {
-    transition: transform 0.5s; /* add transition effect for smooth rolling */
-  }
+	img {
+		transition: transform 0.5s; /* add transition effect for smooth rolling */
+	}
 </style>

@@ -1,5 +1,5 @@
 ---
-import { Container, FeatureCard} from '@littlesticks/odyssey-theme-components';
+import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
@@ -7,66 +7,29 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 
 <Layout>
 	<HomeHeroSection />
-	<!-- <Container>
-		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
-			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
-        <FeatureCard href="#" title="Landing Page 3" imgSrc="/assets/images/home/screenshots/landing-3">
-				</FeatureCard>
-			</div>
-		</section>
-	</Container> -->
-
 	<Container>
 		<section class="feature-card__section">
-			<h2>Site Pages</h2>
-			<p>
-				Head where ever you wanna bro!!
-			</p>
+			<h2>My Pages</h2>
+			<p>Head where ever you wanna bro!!</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/about" title="About Page" imgSrc="../assets/images/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="My Blogs" imgSrc="../assets/images/screenshots/blog">
-				</FeatureCard>
 				<FeatureCard
-					href="/blog/posts/Version-Control/"
-					title="The Post."
-          imgSrc="../assets/images/screenshots/blog-post"
-				>
-				</FeatureCard>
-				
+					href="/about"
+					title="About Page"
+					imgSrc="../assets/images/screenshots/about"
+				/>
+				<FeatureCard
+					href="/blog/"
+					title="My Blogs"
+					imgSrc="../assets/images/screenshots/blog"
+				/>
+				<FeatureCard
+					href="/projects"
+					title="My Projects"
+					imgSrc="../assets/images/screenshots/projects"
+				/>
 			</div>
 		</section>
 	</Container>
-
-	<!-- <Container>
-		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
-			<div class="feature-card__grid">
-				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				>
-				</FeatureCard>
-			</div>
-		</section>
-	</Container> -->
 </Layout>
 
 <style>
