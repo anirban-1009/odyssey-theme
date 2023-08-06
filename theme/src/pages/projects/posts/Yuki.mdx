@@ -6,47 +6,52 @@ publishDate: Apr 10, 2023
 featuredImage: '../../../assets/images/RPi.jpg'
 excerpt: 'Know more about the RPi Project'
 ---
+## How to Build an Emotion Recognition Bot with Raspberry Pi and Google Cloud
 
-### Introduction
+Emotion recognition technology is becoming increasingly sophisticated, and it is now possible to build a bot that can detect human emotions and respond accordingly. In this blog post, we will walk through the process of building an emotion recognition bot using a Raspberry Pi, Pi camera, Google Cloud, and OLED screens.
+The Basics
 
-In this article, we will learn about Git as a technology and why version control is emphasized in project management as a best practice.
+![The Front](../../../assets/images/Yuki/Front.jpg)
 
-#### What is Version Control?
+The bot will consist of three main components:
 
-Version Control is the practice of tracking changes to software code.
+    * **A Raspberry Pi**: The Raspberry Pi is a small, inexpensive computer that is perfect for this project. It will be responsible for running the software that detects facial expressions and responds with different reactions.
+    * **A Pi camera**: The Pi camera will be used to capture images of people's faces. The images will then be sent to Google Cloud for facial expression recognition.
+    * **OLED screens**: The OLED screens will be used to display the bot's reactions.
 
-### Why we need Version Control and Git?
+## The Software
 
-> What is Version Control as a whole?
+The software for the bot will be written in Python. The first step is to install the necessary libraries and modules. We will need the following libraries:
 
-Version control is the practice of tracking changes made to software code. Like how everyone has a lifeline where their actions are recorded subconsciously, such as one's first create, first love, first house, milestones shape an individual and help them grow. Similarly, Version Control helps us go back to a point in the software code timeline to track, revert, or identify which changes contributed to errors or mishaps.
+    * **picamera**: This library is used to control the Pi camera.
+    * **numpy**: This library is used for mathematical operations.
+    * **tensorflow**: This library is used to train and run machine learning models.
+    * **google-cloud-vision**: This library is used to interact with the Google Cloud Vision API.
 
-> What is Git?
+Once the libraries are installed, we can start writing the code. The first step is to initialize the Raspberry Pi camera and OLED screens. Then, we can load the facial expression recognition model from Google Cloud. Finally, we can start a loop that detects facial expressions and responds with different reactions.
 
-Git is a modern version control system that is mature, actively maintained, and open-source. It is a technology that implements the idea of Version Control. Platforms such as GitHub and GitLab provide developers with functionalities to efficiently work in a team.
+The reactions that the bot can display are:
 
-#### GitHub
+    **Happy**: The bot will wag its tail and smile.
+    **Sad**: The bot will put its head down and look sad.
+    **Angry**: The bot will bare its teeth and growl.
+    **Neutral**: The bot will just sit there and look normal.
 
-GitHub is a Microsoft-owned proprietary version control platform that was previously a completely open-source project. It was famous among a large group of software developers and beginner engineers as a whole. However, after its acquisition by Microsoft, several public favorite functionalities were threatened, and their quality has become questionable.
+![Reaction](../../../assets/images/Yuki/Reaction.jpg)
 
-#### GitLab
+## The Assembly
 
-GitLab is an open-source version control platform that can be redeveloped and redistributed with a higher degree of customizable features. It is an ideal case of a DevOps implementation platform that supports Continuous Integration and Development (CI/CD). GitLab also offers team-friendly and productive features.
+Once the software is complete, we can assemble the bot in the acrylic structure. The acrylic structure should be designed to look like a dog's face. The Raspberry Pi, Pi camera, and OLED screens should be mounted inside the structure. The power supply should be connected to the Raspberry Pi.
 
-### Is Verision Control and Git as a technology important to learn?
+## The Conclusion
 
-In my experience, before a beginner embarks on the journey of learning a technology or a framework, I would suggest learning the basics and functionalities of a platform such as Git. This is because there is practically no credible way of transferring knowledge to someone about how much a person has worked over time. Having a continuous presence on a platform like this and being able to showcase learnings and contributions to other technologies is an asset. Platforms like these allow individuals to showcase their skills and contributions, unlike certificates, which many of my peers seek.
+This project is a great way to learn about facial expression recognition, Raspberry Pi, Google Cloud, and OLED screens. The bot can be used as a companion to help people feel better and improve their psychological state. It can also be used for research purposes to study human emotions.
 
-I regret not being so active on platforms like these in my earlier stages, which could have led me to become a confident and successful contributor. Developing the habit of being active on these platforms is a challenge, but it's worth the effort. Any good platform or technology not only brings direct functionality but also a range of other scope of developments to a person. In this case, it brings a sense of scale for anyone, such as how many things are yet to learn and what the people around are up to. It also has a team maintaining functionality to it, where you can assign and manage the issue within a project, which, if not drastically, increases the team's productivity. It is also a good tool to track progress and avoid ambiguity.
+In addition to the basic components and reactions described above, here are some other things you can add to your emotion recognition bot project:
 
-### Conclusion
+    More emotions: You can train the bot to recognize more emotions, such as surprise, fear, and disgust.
+    Different reactions: You can also add different reactions to the bot, such as making different facial expressions, playing different sounds, or saying different words.
+    Portability: You can make the bot more portable by using a battery pack to power it. This way, you can take the bot with you wherever you go.
+    Speech recognition: You can add speech recognition to the bot so that it can respond to your voice commands. This can make the bot more interactive and user-friendly.
 
-At the end of the day, a person's own will is the driving factor of their learning and progress, but having a good hand on some platforms like these exposes us to the world in real terms. It drives individuals to learn further and expand their knowledge, creating a sense of healthy competition. There is no harm in that.
-
-### References
-
-- [Learn Github](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources)
-
-- [Learn GitLab](https://about.gitlab.com/learn/)
-
-- [What' Git?](https://www.atlassian.com/git/tutorials/what-is-git)
+I hope you enjoyed this blog post!

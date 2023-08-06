@@ -1,4 +1,3 @@
-import { codeacademy } from '../icons/icons';
 
 export const footerSocials = [
 	{
