@@ -28,6 +28,7 @@
 	},
 	"dependencies": {
 		"@astrojs/netlify": "^1.2.1",
+		"@heroicons/react": "^2.0.18",
 		"sharp": "^0.32.1"
 	}
 }

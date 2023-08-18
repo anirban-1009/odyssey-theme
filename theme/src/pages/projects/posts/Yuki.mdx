@@ -6,6 +6,20 @@ publishDate: Apr 10, 2023
 featuredImage: '../../../assets/images/RPi.jpg'
 excerpt: 'Know more about the RPi Project'
 ---
+
+<code>
+import {Button} from '@littlesticks/odyssey-theme-components';
+import { Icon } from 'astro-icon';
+
+	<Button customIcon outlined href="https://github.com/ru2saig/yuki">
+		<Fragment slot="icon" class="custom-icon__span">
+            <slot name="icon">Repo</slot>
+			<Icon name="mdi:github" />
+		</Fragment>
+	</Button>
+</code>
+<br/>
+
 ## How to Build an Emotion Recognition Bot with Raspberry Pi and Google Cloud
 
 Emotion recognition technology is becoming increasingly sophisticated, and it is now possible to build a bot that can detect human emotions and respond accordingly. In this blog post, we will walk through the process of building an emotion recognition bot using a Raspberry Pi, Pi camera, Google Cloud, and OLED screens.

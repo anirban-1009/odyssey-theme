@@ -6,6 +6,19 @@ publishDate: Aug 10, 2023
 featuredImage: '../../../assets/images/deltax.jpg'
 excerpt: 'Know more about the RPi Project'
 ---
+<code>
+import {Button} from '@littlesticks/odyssey-theme-components';
+import { Icon } from 'astro-icon';
+
+	<Button customIcon outlined href="https://code.swecha.org/agriculture/delta-robot/delta-agricultural-robot">
+		<Fragment slot="icon" class="custom-icon__span">
+            <slot name="icon">Repo<br/></slot>
+			<Icon name="mdi:github" />
+		</Fragment>
+	</Button>
+</code>
+
+<br/>
 
 ## Building an Open-Source Delta X Robot for Tomato Picking
 
