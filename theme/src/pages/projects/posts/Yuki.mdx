@@ -46,16 +46,17 @@ Once the libraries are installed, we can start writing the code. The first step 
 
 The reactions that the bot can display are:
 
-    **Happy**: The bot will wag its tail and smile.
-    **Sad**: The bot will put its head down and look sad.
-    **Angry**: The bot will bare its teeth and growl.
-    **Neutral**: The bot will just sit there and look normal.
+    **Happy**: The bot will create a set of arcs on it screens depecting it's partially closing eyes and expressing it's happy.
 
 ![Reaction](../../../assets/images/Yuki/Reaction.jpg)
 
-## The Assembly
+## How it works
 
-Once the software is complete, we can assemble the bot in the acrylic structure. The acrylic structure should be designed to look like a dog's face. The Raspberry Pi, Pi camera, and OLED screens should be mounted inside the structure. The power supply should be connected to the Raspberry Pi.
+![Reaction](../../../assets/images/Yuki/Yuki.png)
+    * *Capturing Images* - Yuki uses RpiCamera to capture images and feed it to the Raspberry pi Zero W.
+    * *Face Detection* - On the feeded stream of video to the RPi, it uses the HaarCascade and OpenCV to detect Human Frontal Face[^1].
+    * *Detecting Emotions* - On sucessful detection of human frontal face on the camera, forward the frame to the Google Cloud Vision[^2] to detect the emotion.
+    * *Yuki Response* - Based on the response from the Google Cloud Vision and it's detection, Yuki responses with a relevent expression.
 
 ## The Conclusion
 
@@ -69,3 +70,9 @@ In addition to the basic components and reactions described above, here are some
     Speech recognition: You can add speech recognition to the bot so that it can respond to your voice commands. This can make the bot more interactive and user-friendly.
 
 I hope you enjoyed this blog post!
+
+---
+
+[^1]: [Haar Cascade Object Detection Face & Eye OpenCV Python Tutorial](https://pythonprogramming.net/haar-cascade-face-eye-detection-python-opencv-tutorial/)
+[^2]: [Use Google cloud Vision on Raspberry Pi](https://www.dexterindustries.com/howto/use-google-cloud-vision-on-the-raspberry-pi/)
+ 

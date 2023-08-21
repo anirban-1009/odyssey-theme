@@ -1,5 +1,6 @@
 ---
 const {navData} = Astro.props;
+import {Button} from '@littlesticks/odyssey-theme-components';
 ---
 
 {navData && <nav>
@@ -7,7 +8,9 @@ const {navData} = Astro.props;
     {navData.map(navItem => (
       (<li><a href={navItem.slug} >{navItem.title}</a></li>)
     ))}
+    <Button unelevated>Button 2</Button>
   </ul>
+  
 </nav> }
 
 <style>
