@@ -9,7 +9,7 @@ excerpt: 'Know more about the RPi Project'
 
 <code>
 import {Button} from '@littlesticks/odyssey-theme-components';
-import { Icon } from 'astro-icon';
+import Icon from 'astro-icon';
 
 	<Button customIcon outlined href="https://github.com/ru2saig/yuki">
 		<Fragment slot="icon" class="custom-icon__span">
@@ -25,7 +25,6 @@ import { Icon } from 'astro-icon';
 Emotion recognition technology is becoming increasingly sophisticated, and it is now possible to build a bot that can detect human emotions and respond accordingly. In this blog post, we will walk through the process of building an emotion recognition bot using a Raspberry Pi, Pi camera, Google Cloud, and OLED screens.
 The Basics
 
-![The Front](../../../assets/images/Yuki/Front.jpg)
 
 The bot will consist of three main components:
 
@@ -48,11 +47,10 @@ The reactions that the bot can display are:
 
     **Happy**: The bot will create a set of arcs on it screens depecting it's partially closing eyes and expressing it's happy.
 
-![Reaction](../../../assets/images/Yuki/Reaction.jpg)
+
 
 ## How it works
 
-![Reaction](../../../assets/images/Yuki/Yuki.png)
     * *Capturing Images* - Yuki uses RpiCamera to capture images and feed it to the Raspberry pi Zero W.
     * *Face Detection* - On the feeded stream of video to the RPi, it uses the HaarCascade and OpenCV to detect Human Frontal Face[^1].
     * *Detecting Emotions* - On sucessful detection of human frontal face on the camera, forward the frame to the Google Cloud Vision[^2] to detect the emotion.
